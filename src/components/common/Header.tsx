@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
@@ -12,8 +13,8 @@ const Header: React.FC = () => {
                         <div className="col-12 col-lg-6 col-xxl-4">
                            <div className="topbar__list-wrapper">
                               <ul className="topbar__list">
-                                 <li><a href="mailto:faithfoundation@gmail.com"><i
-                                          className="fa-regular fa-envelope"></i>faithfoundation@gmail.com</a>
+                                 <li><a href="mailto:info@faithfoundation.rw"><i
+                                          className="fa-regular fa-envelope"></i>info@faithfoundation.rw</a>
                                  </li>
                                  <li><a href="tel:+250786714717"><i className="fa-solid fa-phone"></i>+250 786 714 717</a>
                                  </li>
@@ -42,27 +43,30 @@ const Header: React.FC = () => {
                   <div className="main-header__menu-box">
                      <nav className="navbar p-0">
                         <div className="navbar-logo">
-                           <a href="index.html">
-                              <img src="/images/logo.png" alt="Image" />
-                           </a>
+                           <Link to="/" aria-label="home page">
+                              <img src="/images/logo.png" alt="Faith Foundation Rwanda Logo" />
+                           </Link>
                         </div>
                         <div className="navbar__menu-wrapper">
                            <div className="navbar__menu d-none d-xl-block">
                               <ul className="navbar__list">
                                  <li className="navbar__item nav-fade">
-                                    <a href="/">Home</a>
+                                    <Link to="/">Home</Link>
                                  </li>
                                  <li className="navbar__item nav-fade">
-                                    <a href="/about-us">About Us</a>
+                                    <Link to="/about-us">About Us</Link>
                                  </li>
                                  <li className="navbar__item nav-fade">
-                                    <a href="/causes">Causes</a>
+                                    <Link to="/causes">Causes</Link>
                                  </li>
                                  <li className="navbar__item nav-fade">
-                                    <a href="/news">News</a>
+                                    <Link to="/news">News</Link>
                                  </li>
                                  <li className="navbar__item nav-fade">
-                                    <a href="/contact-us">Contact Us</a>
+                                    <Link to="/events">Events</Link>
+                                 </li>
+                                 <li className="navbar__item nav-fade">
+                                    <Link to="/contact-us">Contact Us</Link>
                                  </li>
                               </ul>
                            </div>
@@ -72,7 +76,7 @@ const Header: React.FC = () => {
                               </div>
                               <div className="contact-content">
                                  <p>Call Us Now</p>
-                                 <a href="tel:01-793-7938">(+01)-793-7938 </a>
+                                 <a href="tel:+250786714717">+250 786 714 717</a>
                               </div>
                            </div>
                         </div>
@@ -83,8 +87,8 @@ const Header: React.FC = () => {
                                     <i className="fa-solid fa-magnifying-glass"></i>
                                  </button>
                               </div>
-                              <a href="/donate" className="btn--primary d-none d-md-flex">Donate Now <i
-                                    className="fa-solid fa-arrow-right"></i></a>
+                              <Link to="/donate" className="btn--primary d-none d-md-flex">Donate Now <i
+                                    className="fa-solid fa-arrow-right"></i></Link>
                            </div>
                            <button className="open-offcanvas-nav d-flex d-xl-none" aria-label="toggle mobile menu"
                               title="open offcanvas menu">
@@ -103,29 +107,50 @@ const Header: React.FC = () => {
          <nav className="mobile-menu__wrapper">
             <div className="mobile-menu__header nav-fade">
                <div className="logo">
-                  <a href="/" aria-label="home page" title="logo">
-                     <img src="/images/logo.png" alt="Image" />
-                  </a>
+                  <Link to="/" aria-label="home page" title="logo">
+                     <img src="/images/logo.png" alt="Faith Foundation Rwanda Logo" />
+                  </Link>
                </div>
                <button aria-label="close mobile menu" className="close-mobile-menu">
                   <i className="fa-solid fa-xmark"></i>
                </button>
             </div>
-            <div className="mobile-menu__list"></div>
+            <div className="mobile-menu__list">
+               <ul className="navbar__list">
+                  <li className="navbar__item nav-fade">
+                     <Link to="/">Home</Link>
+                  </li>
+                  <li className="navbar__item nav-fade">
+                     <Link to="/about-us">About Us</Link>
+                  </li>
+                  <li className="navbar__item nav-fade">
+                     <Link to="/causes">Causes</Link>
+                  </li>
+                  <li className="navbar__item nav-fade">
+                     <Link to="/news">News</Link>
+                  </li>
+                  <li className="navbar__item nav-fade">
+                     <Link to="/events">Events</Link>
+                  </li>
+                  <li className="navbar__item nav-fade">
+                     <Link to="/contact-us">Contact Us</Link>
+                  </li>
+               </ul>
+            </div>
             <div className="mobile-menu__cta nav-fade d-block d-md-none">
-               <a href="/donate" className="btn--primary ">Donate Now <i className="fa-solid fa-arrow-right"></i></a>
+               <Link to="/donate" className="btn--primary ">Donate Now <i className="fa-solid fa-arrow-right"></i></Link>
             </div>
             <div className="mobile-menu__social social nav-fade">
-               <a href="https://www.facebook.com/" target="_blank" aria-label="share us on facebook" title="facebook">
+               <a href="https://www.facebook.com/faithfoundationrwanda" target="_blank" rel="noopener noreferrer" aria-label="share us on facebook" title="facebook">
                   <i className="fa-brands fa-facebook-f"></i>
                </a>
-               <a href="https://vimeo.com/" target="_blank" aria-label="share us on vimeo" title="vimeo">
+               <a href="https://vimeo.com/" target="_blank" rel="noopener noreferrer" aria-label="share us on vimeo" title="vimeo">
                   <i className="fa-brands fa-vimeo-v"></i>
                </a>
-               <a href="https://x.com/" target="_blank" aria-label="share us on twitter" title="twitter">
+               <a href="https://x.com/faithfoundationrw" target="_blank" rel="noopener noreferrer" aria-label="share us on twitter" title="twitter">
                   <i className="fa-brands fa-twitter"></i>
                </a>
-               <a href="https://www.linkedin.com/" target="_blank" aria-label="share us on linkedin" title="linkedin">
+               <a href="https://www.linkedin.com/company/faith-foundation-rwanda" target="_blank" rel="noopener noreferrer" aria-label="share us on linkedin" title="linkedin">
                   <i className="fa-brands fa-linkedin-in"></i>
                </a>
             </div>
@@ -138,7 +163,7 @@ const Header: React.FC = () => {
          </button>
          <form action="#" method="post">
             <div className="search-popup__group">
-               <input type="text" name="search-field" id="searchField" placeholder="Search...." required />
+               <input type="text" name="search-field" id="searchField" placeholder="Search..." required />
                <button type="submit" aria-label="search products" title="search products">
                   <i className="fa-solid fa-magnifying-glass"></i>
                </button>

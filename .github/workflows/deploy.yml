@@ -69,29 +69,4 @@ jobs:
           echo "Cleaning up old Docker images..."
           docker image prune -f
 
-      - name: Deployment Summary
-        if: success()
-        run: |
-          echo "🎉 Faith Foundations Website Deployment Summary"
-          echo "=========================================="
-          echo "✅ Repository: Faith Foundations Website"
-          echo "✅ Branch: ${{ github.ref_name }}"
-          echo "✅ Commit: ${{ github.sha }}"
-          echo "✅ Runner: ALC VPS"
-          echo "✅ Container: faith-foundations"
-          echo "✅ Port: 4040"
-          echo "✅ Status: Successfully deployed"
-          echo "=========================================="
-
-      - name: Deployment Failure Notification
-        if: failure()
-        run: |
-          echo "❌ Faith Foundations Website Deployment Failed"
-          echo "=========================================="
-          echo "❌ Branch: ${{ github.ref_name }}"
-          echo "❌ Commit: ${{ github.sha }}"
-          echo "❌ Runner: ALC VPS"
-          echo "❌ Status: Deployment failed"
-          echo "=========================================="
-          docker logs faith-foundations 2>/dev/null || true
-          exit 1
+     

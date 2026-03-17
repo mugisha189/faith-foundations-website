@@ -12,7 +12,6 @@ import SingleNews from './pages/SingleNews';
 import SingleCampaign from './pages/SingleCampaign';
 import Terms from './pages/Terms';
 import NotFound from './pages/NotFound';
-import SanityStudio from './components/SanityStudio';
 import SEO from './components/SEO';
 
 function App() {
@@ -49,7 +48,6 @@ function App() {
         <Route path="/checkout" element={<Donate />} />
         <Route path="/coming-soon" element={<Terms />} />
         
-        <Route path="/studio" element={<SanityStudio />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />

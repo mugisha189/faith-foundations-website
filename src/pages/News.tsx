@@ -304,36 +304,6 @@ const News: React.FC = () => {
                </div>
                <div className="col-12 col-xl-4">
                   <div className="blog-main__sidebar">
-                     <div className="cm-details-author cm-sidebar-widget" data-aos="fade-up" data-aos-duration="1000"
-                        data-aos-delay="100">
-                        <div className="author-thumb">
-                           <img src="/images/author-two.png" alt="Image" />
-                        </div>
-                        <div className="author-meta">
-                           <h6>Rosalina Willaim</h6>
-                           <p>Front End Developer</p>
-                           <p>he whimsically named Egg Canvas is the
-                              design director and photographer
-                              in New York.
-                           </p>
-                        </div>
-                        <div className="social">
-                           <a href="https://www.facebook.com/" target="_blank" aria-label="share us on facebook"
-                              title="facebook">
-                              <i className="fa-brands fa-facebook-f"></i>
-                           </a>
-                           <a href="https://vimeo.com/" target="_blank" aria-label="share us on vimeo" title="vimeo">
-                              <i className="fa-brands fa-vimeo-v"></i>
-                           </a>
-                           <a href="https://x.com/" target="_blank" aria-label="share us on twitter" title="twitter">
-                              <i className="fa-brands fa-twitter"></i>
-                           </a>
-                           <a href="https://www.linkedin.com/" target="_blank" aria-label="share us on linkedin"
-                              title="linkedin">
-                              <i className="fa-brands fa-linkedin-in"></i>
-                           </a>
-                        </div>
-                     </div>
                      <div className="cm-details__sidebar">
                         <div className="cm-sidebar-widget" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                            <div className="intro">

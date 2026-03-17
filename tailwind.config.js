@@ -13,10 +13,25 @@ export default {
         'outfit': ['Outfit', 'sans-serif'],
       },
       colors: {
-        primary: '#ffc107',
-        secondary: '#122f2a',
-        quaternary: {
-          DEFAULT: '#3ead3c',
+        primary: '#3b82f6',
+        secondary: '#1e40af',
+        tertiary: '#2563eb',
+        quaternary: '#1d4ed8',
+        quinary: '#1e40af',
+        senary: '#f3f4f6',
+        light: '#f8fafc',
+        dark: '#1e293b',
+        blue: {
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+          800: '#1e40af',
+          900: '#1e3a8a',
         }
       },
       animation: {

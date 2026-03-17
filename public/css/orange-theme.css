@@ -1,5 +1,24 @@
 :root {
-  --base-color: #ffb347;
+  --base-color: #f472b6;
+  --template-bg: #ffffff;
+  --template-color: #1e3a8a;
+  --white: #ffffff;
+  --black: #000000;
+  --primary-color: #3b82f6;
+  --secondary-color: #1e40af;
+  --tertiary-color: #2563eb;
+  --quaternary-color: #1d4ed8;
+  --quinary-color: #061408;
+  --septenary-color: #1e293b;
+  --senary-color: #f3f4f6;
+  --hover-color: #2563eb;
+  --transition: all 0.5s ease;
+  --shadow: 0px 10px 25px 0px rgba(37, 99, 235, 0.08);
+  --shadow-secondary: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  --shadow-tertiary: 0px 4px 8px 0px rgba(0, 0, 0, 0.07);
+  --primary-six: #479F10;
+  --primary-six-title: #0B3D19;
+  --primary-six-light: #0B3D19;
 }
 
 .base-img {

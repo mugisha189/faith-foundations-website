@@ -16,4 +16,12 @@ export default defineConfig({
   define: {
     global: 'globalThis', // Fix global undefined error
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+  },
 })

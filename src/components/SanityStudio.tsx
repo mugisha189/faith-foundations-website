@@ -1,14 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, {  } from 'react'
 
 const SanityStudio: React.FC = () => {
-  const [isMounted, setIsMounted] = useState(false)
-
-  useEffect(() => {
-    setIsMounted(true)
-    return () => setIsMounted(false)
-  }, [])
-
-  if (!isMounted) return null
 
   return (
     <div style={{ 

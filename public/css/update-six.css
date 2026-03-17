@@ -2639,7 +2639,7 @@ div {
 }
 .mega-menu .mega-content-wrapper .new {
   position: absolute;
-  background-color: #ffc107;
+  background-color: #f472b6;
   padding: 3px 30px;
   top: 0px;
   left: 0px;
@@ -4496,7 +4496,7 @@ div {
   margin-top: 20px;
 }
 .difference .difference__single-first .difference__single-thumb {
-  background-color: #ffc107;
+  background-color: #f472b6;
 }
 .difference .difference__single-second .difference__single-thumb {
   background-color: #122f2a !important;
@@ -9391,7 +9391,7 @@ div {
   appearance: none;
   width: 20px;
   height: 20px;
-  background: #ffc107;
+  background: #f472b6;
   border: none;
   outline: none;
   cursor: pointer;
@@ -13587,7 +13587,7 @@ div {
   border-top: 1px dotted #b2b2b2;
 }
 .color-palate .palate.default-color {
-  background: #ffc107;
+  background: #f472b6;
 }
 .color-palate .palate.blue-color {
   background: #246af4;

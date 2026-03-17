@@ -35,20 +35,17 @@ const Footer: React.FC = () => {
             <div className="row gutter-60">
                <div className="col-12 col-md-6 col-xl-3">
                   <div className="footer-two__widget" data-aos="fade-up" data-aos-duration="1000">
-                     <div className="footer-two__widget-logo">
+                     {/* <div className="footer-two__widget-logo">
                         <a href="/">
                            <img src="/images/logo-light.png" alt="Image" />
                         </a>
-                     </div>
+                     </div> */}
                      <div className="footer-two__widget-content">
                         <p>Faith Foundation brings hope to vulnerable children and women in Rwanda through education, empowerment, and community support since 2012.</p>
                         <div className="social">
                            <a href="https://www.facebook.com/" target="_blank" aria-label="share us on facebook"
                               title="facebook">
                               <i className="fa-brands fa-facebook-f"></i>
-                           </a>
-                           <a href="https://vimeo.com/" target="_blank" aria-label="share us on vimeo" title="vimeo">
-                              <i className="fa-brands fa-vimeo-v"></i>
                            </a>
                            <a href="https://x.com/" target="_blank" aria-label="share us on twitter" title="twitter">
                               <i className="fa-brands fa-twitter"></i>
@@ -80,41 +77,6 @@ const Footer: React.FC = () => {
                            </li>
                            <li><a href="/causes"><i className="fa-solid fa-arrow-right"></i>Our
                                  Campaign</a>
-                           </li>
-                           <li><a href="/faq"><i className="fa-solid fa-arrow-right"></i>FAQ</a></li>
-                           <li><a href="/contact-us"><i className="fa-solid fa-arrow-right"></i>Get A
-                                 Quote</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div className="col-12 col-md-6 col-xl-3">
-                  <div className="footer-two__widget footer-two__widget--alternate" data-aos="fade-up"
-                     data-aos-duration="1000" data-aos-delay="400">
-                     <div className="footer-two__widget-intro">
-                        <h5>Our Services</h5>
-                        <div className="line">
-                           <span className="large-line"></span>
-                           <span className="small-line"></span>
-                           <span className="small-line"></span>
-                        </div>
-                     </div>
-                     <div className="footer-two__widget-content">
-                        <ul>
-                           <li><a href="/causes"><i className="fa-solid fa-arrow-right"></i>Our Causes</a>
-                           </li>
-                           <li><a href="/events"><i className="fa-solid fa-arrow-right"></i>Education
-                                 Support</a>
-                           </li>
-                           <li><a href="/causes"><i className="fa-solid fa-arrow-right"></i>Our
-                                 Campaign</a>
-                           </li>
-                           <li><a href="/causes"><i className="fa-solid fa-arrow-right"></i>Food
-                                 Support</a>
-                           </li>
-                           <li><a href="/causes"><i className="fa-solid fa-arrow-right"></i>Health
-                                 Support</a>
                            </li>
                         </ul>
                      </div>

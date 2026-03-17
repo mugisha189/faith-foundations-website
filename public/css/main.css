@@ -2354,6 +2354,9 @@ div {
 /* ==== 
  --------- (3.03) preloader styles start ---------
  ==== */
+.page-wrapper {
+  background-color: white !important;
+}
 .preloader {
   background-color: var(--black);
   position: fixed;
@@ -2403,14 +2406,7 @@ div {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 5px;
-  background: -webkit-gradient(linear, left top, right top, from(#ffcc00), color-stop(#00ccff), color-stop(#ff6600), to(#ffcc00));
-  background: linear-gradient(90deg, #ffcc00, #00ccff, #ff6600, #ffcc00);
-  background-size: 300%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent !important;
-  -webkit-animation: moveBg 5s ease-in-out infinite;
-          animation: moveBg 5s ease-in-out infinite;
+  color: black !important;
 }
 
 @-webkit-keyframes flipY {
@@ -3298,7 +3294,7 @@ div {
 }
 .mega-menu .mega-content-wrapper .new {
   position: absolute;
-  background-color: #ffc107;
+  background-color: #f472b6;
   padding: 3px 30px;
   top: 0px;
   left: 0px;
@@ -5696,7 +5692,7 @@ div {
   margin-top: 20px;
 }
 .difference .difference__single-first .difference__single-thumb {
-  background-color: #ffc107;
+  background-color: #f472b6;
 }
 .difference .difference__single-second .difference__single-thumb {
   background-color: var(--secondary-color);
@@ -11655,7 +11651,7 @@ div {
           appearance: none;
   width: 20px;
   height: 20px;
-  background: #ffc107;
+  background: #f472b6;
   border: none;
   outline: none;
   cursor: pointer;
@@ -16529,7 +16525,7 @@ div {
   border-top: 1px dotted #b2b2b2;
 }
 .color-palate .palate.default-color {
-  background: #ffc107;
+  background: #f472b6;
 }
 .color-palate .palate.blue-color {
   background: #246af4;

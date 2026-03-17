@@ -1131,7 +1131,7 @@
         var style =
           "background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(" +
           valPercent +
-          ", #ffc107), color-stop(" +
+          ", #f472b6), color-stop(" +
           valPercent +
           ", #505D6A30));";
         el.style = style;

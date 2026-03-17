@@ -1,0 +1,97 @@
+
+name: Deploy Website
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy Website
+    runs-on: alc-vps
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Stop existing container
+        run: |
+          echo "Stopping existing container..."
+          docker stop faith-foundations 2>/dev/null || true
+          docker rm faith-foundations 2>/dev/null || true
+
+      - name: Build Docker image
+        run: |
+          echo "Building Docker image..."
+          docker build -t faith-foundations .
+
+      - name: Run Docker container
+        run: |
+          echo "Starting Docker container..."
+          docker run -d \
+            --name faith-foundations \
+            --restart unless-stopped \
+            -p 4040:4040 \
+            faith-foundations
+
+      - name: Health check
+        run: |
+          echo "Performing deployment health check..."
+          sleep 5
+          
+          # Check if container is running
+          if docker ps | grep -q faith-foundations; then
+            echo "✅ Container is running"
+          else
+            echo "❌ Container failed to start"
+            docker logs faith-foundations
+            exit 1
+          fi
+          
+          # Check if port 4040 is accessible
+          if curl -f http://localhost:4040 > /dev/null 2>&1; then
+            echo "✅ Application is responding on port 4040"
+          else
+            echo "❌ Application is not responding on port 4040"
+            docker logs faith-foundations
+            exit 1
+          fi
+          
+          echo "✅ Faith Foundations Website deployed successfully!"
+          echo "� Available at: http://localhost:4040"
+
+      - name: Cleanup old images
+        run: |
+          echo "Cleaning up old Docker images..."
+          docker image prune -f
+
+      - name: Deployment Summary
+        if: success()
+        run: |
+          echo "🎉 Faith Foundations Website Deployment Summary"
+          echo "=========================================="
+          echo "✅ Repository: Faith Foundations Website"
+          echo "✅ Branch: ${{ github.ref_name }}"
+          echo "✅ Commit: ${{ github.sha }}"
+          echo "✅ Runner: ALC VPS"
+          echo "✅ Container: faith-foundations"
+          echo "✅ Port: 4040"
+          echo "✅ Status: Successfully deployed"
+          echo "=========================================="
+
+      - name: Deployment Failure Notification
+        if: failure()
+        run: |
+          echo "❌ Faith Foundations Website Deployment Failed"
+          echo "=========================================="
+          echo "❌ Branch: ${{ github.ref_name }}"
+          echo "❌ Commit: ${{ github.sha }}"
+          echo "❌ Runner: ALC VPS"
+          echo "❌ Status: Deployment failed"
+          echo "=========================================="
+          docker logs faith-foundations 2>/dev/null || true
+          exit 1

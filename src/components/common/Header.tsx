@@ -20,48 +20,13 @@ const Header: React.FC = () => {
                               </ul>
                            </div>
                         </div>
-                        <div className="col-12 col-xxl-4 d-none d-xxl-block">
-                           <div className="topbar__extra text-center">
-                              <p><i className="icon-heart-hand"></i> Ready to bring hope? Join us as a volunteer!
-                              </p>
+                        <div className="col-12 col-lg-6 col-xxl-4">
+                           <div className="topbar__items justify-content-end">
                            </div>
                         </div>
                         <div className="col-12 col-lg-6 col-xxl-4">
-                           <div className="topbar__items justify-content-end">
-                              <div className="select-currency">
-                                 <select name="currency" className="currency-select select">
-                                    <option value="usd">USD</option>
-                                    <option value="gbp">GBP</option>
-                                    <option value="aud">AUD</option>
-                                    <option value="euro">Euro</option>
-                                 </select>
-                              </div>
-                              <div className="select-country">
-                                 <select name="country" className="country-select select">
-                                    <option data-flag="fi-gb-eng">English</option>
-                                    <option data-flag="fi-us">Spanish</option>
-                                    <option data-flag="fi-cn">Chinese</option>
-                                    <option data-flag="fi-it">Italian</option>
-                                 </select>
-                              </div>
-                              <div className="social">
-                                 <a href="https://www.facebook.com/" target="_blank" aria-label="share us on facebook"
-                                    title="facebook">
-                                    <i className="fa-brands fa-facebook-f"></i>
-                                 </a>
-                                 <a href="https://vimeo.com/" target="_blank" aria-label="share us on vimeo"
-                                    title="vimeo">
-                                    <i className="fa-brands fa-vimeo-v"></i>
-                                 </a>
-                                 <a href="https://x.com/" target="_blank" aria-label="share us on twitter"
-                                    title="twitter">
-                                    <i className="fa-brands fa-twitter"></i>
-                                 </a>
-                                 <a href="https://www.linkedin.com/" target="_blank" aria-label="share us on linkedin"
-                                    title="linkedin">
-                                    <i className="fa-brands fa-linkedin-in"></i>
-                                 </a>
-                              </div>
+                           <div className="topbar__extra text-center">
+                              <p><i className="icon-heart-hand"></i> Ready to bring hope? Join us as a volunteer!</p>
                            </div>
                         </div>
                      </div>
@@ -92,69 +57,6 @@ const Header: React.FC = () => {
                                  </li>
                                  <li className="navbar__item nav-fade">
                                     <a href="/causes">Causes</a>
-                                 </li>
-                                 <li className="navbar__item navbar__item--has-children nav-fade">
-                                    <a href="#" aria-label="dropdown menu"
-                                       className="navbar__dropdown-label dropdown-label-alter">Pages</a>
-                                    <ul className="navbar__sub-menu">
-                                       <li>
-                                          <a href="/faq">FAQ</a>
-                                       </li>
-                                       <li>
-                                          <a href="/donate">Donate Us</a>
-                                       </li>
-                                       <li>
-                                          <a href="/volunteer">Become Volunteer</a>
-                                       </li>
-                                       <li className="navbar__item navbar__item--has-children">
-                                          <a aria-label="dropdown menu"
-                                             className="navbar__dropdown-label navbar__dropdown-label-sub">Events</a>
-                                          <ul className="navbar__sub-menu navbar__sub-menu__nested">
-                                             <li>
-                                                <a href="/events">Events</a>
-                                             </li>
-                                             <li>
-                                                <a href="/event-details">Event Details</a>
-                                             </li>
-                                          </ul>
-                                       </li>
-                                       <li className="navbar__item navbar__item--has-children">
-                                          <a aria-label="dropdown menu"
-                                             className="navbar__dropdown-label navbar__dropdown-label-sub">Shop</a>
-                                          <ul className="navbar__sub-menu navbar__sub-menu__nested">
-                                             <li>
-                                                <a href="/shop">Our Shop</a>
-                                             </li>
-                                             <li>
-                                                <a href="/product-details">Product Details</a>
-                                             </li>
-                                             <li>
-                                                <a href="/cart">View Cart</a>
-                                             </li>
-                                             <li>
-                                                <a href="/checkout">Checkout</a>
-                                             </li>
-                                          </ul>
-                                       </li>
-                                       <li className="navbar__item navbar__item--has-children">
-                                          <a aria-label="dropdown menu"
-                                             className="navbar__dropdown-label navbar__dropdown-label-sub">Team</a>
-                                          <ul className="navbar__sub-menu navbar__sub-menu__nested">
-                                             <li>
-                                                <a href="/team">Our Teams</a>
-                                             </li>
-                                             <li>
-                                                <a href="/team-details">Team Details</a>
-                                             </li>
-                                          </ul>
-                                       </li>
-                                       <li>
-                                          <a href="/coming-soon">Coming Soon</a>
-                                       </li>
-                                       <li>
-                                          <a href="/404">Error</a>
-                                       </li>
-                                    </ul>
                                  </li>
                                  <li className="navbar__item nav-fade">
                                     <a href="/news">News</a>

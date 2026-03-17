@@ -1,8 +1,8 @@
 import { defineConfig } from '@sanity/cli'
 
 export default defineConfig({
-  projectId: 'your-project-id',
-  dataset: 'production',
+  projectId: process.env.SANITY_PROJECT_ID || 'your-project-id',
+  dataset: process.env.SANITY_DATASET || 'production',
   plugins: [
     // Add structure tool for better organization
     // Add vision tool for GROQ queries

@@ -11,14 +11,18 @@ import News from './pages/News';
 import SingleNews from './pages/SingleNews';
 import SingleCampaign from './pages/SingleCampaign';
 import Terms from './pages/Terms';
+import SanityStudio from './components/SanityStudio';
+import SEO from './components/SEO';
 
 function App() {
   return (
-    <Router >
+    <>
+      <SEO />
+      <Router >
             <div className="page-wrapper">
               <div className="preloader">
          <i className="icon-donation"></i>
-         <p>CHARIFUND</p>
+         <p>Faith Foundations</p>
       </div>
       <Header />
       <Routes>
@@ -44,6 +48,7 @@ function App() {
         <Route path="/checkout" element={<Donate />} />
         <Route path="/coming-soon" element={<Terms />} />
         <Route path="/404" element={<Terms />} />
+        <Route path="/studio" element={<SanityStudio />} />
       </Routes>
       <Footer />
       <div className="mouseCursor cursor-outer"></div>
@@ -56,6 +61,7 @@ function App() {
       </button>
             </div>
     </Router>
+    </>
   );
 }
 

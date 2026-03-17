@@ -1,8 +1,16 @@
 import React from 'react';
+import HomePageSEO from '../components/HomePageSEO';
 
 const HomePage: React.FC = () => {
   return (
-   <div >
+    <>
+      <HomePageSEO
+        title="Faith Foundation Rwanda - Empowering Vulnerable Children & Women Since 2012"
+        description="Faith Foundation Rwanda empowers vulnerable children and women since 2012. Join us in breaking the poverty cycle through education, child sponsorship, and community development in Kinigi, Rwanda."
+        keywords="Faith Foundation, Rwanda, vulnerable children, women empowerment, charity, nonprofit, NGO, child sponsorship, poverty alleviation, Kinigi, education, skills training, community development"
+        image="https://www.faithfoundation.rw/images/faith-foundation-hero.jpg"
+      />
+      <div >
       <section className="banner-two">
          <div className="banner-two__slider swiper">
             <div className="swiper-wrapper">
@@ -1819,7 +1827,8 @@ const HomePage: React.FC = () => {
             <img src="/images/blog/spade-base.png" alt="Image" className="base-img" />
          </div>
       </section>
-   </div>
+      </div>
+    </>
   );
 };
 

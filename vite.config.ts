@@ -20,8 +20,15 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: undefined,
+        assetFileNames: 'assets/[name].[hash][extname]',
+        chunkFileNames: 'assets/[name].[hash].js',
+        entryFileNames: 'assets/[name].[hash].js',
       },
     },
     chunkSizeWarningLimit: 1000,
+    assetsDir: 'assets',
+    outDir: 'dist',
+    emptyOutDir: true,
   },
+  base: '/',
 })

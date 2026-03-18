@@ -18,11 +18,15 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
+      external: ['jquery'], // Externalize jQuery
       output: {
         manualChunks: undefined,
         assetFileNames: 'assets/[name].[hash][extname]',
         chunkFileNames: 'assets/[name].[hash].js',
         entryFileNames: 'assets/[name].[hash].js',
+        globals: {
+          jquery: '$', // Map jQuery to global $ variable
+        },
       },
     },
     chunkSizeWarningLimit: 1000,

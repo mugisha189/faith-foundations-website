@@ -7,4 +7,7 @@ declare global {
   }
 }
 
-declare module "*.js";
+declare module "*.js" {
+  const value: any;
+  export default value;
+}

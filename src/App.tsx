@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage';
 import AboutUs from './pages/AboutUs';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
+import Preloader from './components/common/Preloader';
 import Donate from './pages/Donate';
 import ContactUs from './pages/ContactUs';
 import Campaign from './pages/Campaign';
@@ -18,12 +19,9 @@ function App() {
   return (
     <>
       <SEO />
+      <Preloader />
       <Router >
             <div className="page-wrapper">
-              <div className="preloader">
-         <i className="icon-donation"></i>
-         <p>Faith Foundations</p>
-      </div>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />

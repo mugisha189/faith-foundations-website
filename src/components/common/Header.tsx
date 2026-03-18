@@ -3,7 +3,7 @@ import React from 'react';
 const Header: React.FC = () => {
   return (
 <div>
-      <div className="topbar topbar--secondary d-none d-lg-block">
+      <div className="bg-secondary-color pt-[11px] pb-[24px] absolute topbar topbar--secondary d-none d-lg-block">
          <div className="container">
             <div className="row">
                <div className="col-12">
@@ -22,11 +22,6 @@ const Header: React.FC = () => {
                         </div>
                         <div className="col-12 col-lg-6 col-xxl-4">
                            <div className="topbar__items justify-content-end">
-                           </div>
-                        </div>
-                        <div className="col-12 col-lg-6 col-xxl-4">
-                           <div className="topbar__extra text-center">
-                              <p><i className="icon-heart-hand"></i> Ready to bring hope? Join us as a volunteer!</p>
                            </div>
                         </div>
                      </div>
@@ -143,14 +138,8 @@ const Header: React.FC = () => {
                <a href="https://www.facebook.com/faithfoundationrwanda" target="_blank" rel="noopener noreferrer" aria-label="share us on facebook" title="facebook">
                   <i className="fa-brands fa-facebook-f"></i>
                </a>
-               <a href="https://vimeo.com/" target="_blank" rel="noopener noreferrer" aria-label="share us on vimeo" title="vimeo">
-                  <i className="fa-brands fa-vimeo-v"></i>
-               </a>
                <a href="https://x.com/faithfoundationrw" target="_blank" rel="noopener noreferrer" aria-label="share us on twitter" title="twitter">
                   <i className="fa-brands fa-twitter"></i>
-               </a>
-               <a href="https://www.linkedin.com/company/faith-foundation-rwanda" target="_blank" rel="noopener noreferrer" aria-label="share us on linkedin" title="linkedin">
-                  <i className="fa-brands fa-linkedin-in"></i>
                </a>
             </div>
          </nav>

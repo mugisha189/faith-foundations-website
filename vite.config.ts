@@ -31,4 +31,7 @@ export default defineConfig({
     emptyOutDir: true,
   },
   base: '/',
+  optimizeDeps: {
+    include: ['jquery'], // Ensure jQuery is pre-bundled and available
+  },
 })

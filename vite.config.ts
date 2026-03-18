@@ -15,6 +15,8 @@ export default defineConfig({
   },
   define: {
     global: 'globalThis', // Fix global undefined error
+    // Provide require polyfill for browser
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
   },
   build: {
     rollupOptions: {
@@ -38,4 +40,8 @@ export default defineConfig({
   optimizeDeps: {
     include: ['jquery'], // Ensure jQuery is pre-bundled and available
   },
+  // Add CommonJS support
+  ssr: {
+    noExternal: ['jquery']
+  }
 })

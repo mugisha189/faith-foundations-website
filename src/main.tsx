@@ -3,7 +3,13 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 
-// Import jQuery plugins in correct order
+// jQuery is loaded from CDN in HTML
+// Expose jQuery globally for custom scripts (already available from CDN)
+if (typeof window !== 'undefined' && window.jQuery) {
+  (window as any).$ = (window as any).jQuery;
+}
+
+// Import remaining jQuery plugins in correct order (GSAP plugins loaded from CDN)
 // @ts-ignore - No type definitions available
 import "./assets/js/bootstrap.bundle.min.js";
 // @ts-ignore - No type definitions available
@@ -18,14 +24,6 @@ import "./assets/js/viewport.jquery.js";
 import "./assets/js/odometer.min.js";
 // @ts-ignore - No type definitions available
 import "./assets/js/vanilla-tilt.min.js";
-// @ts-ignore - No type definitions available
-import "./assets/js/SplitText.min.js";
-// @ts-ignore - No type definitions available
-import "./assets/js/ScrollToPlugin.min.js";
-// @ts-ignore - No type definitions available
-import "./assets/js/ScrollTrigger.min.js";
-// @ts-ignore - No type definitions available
-import "./assets/js/gsap.min.js";
 // @ts-ignore - No type definitions available
 import "./assets/js/template-settings.js";
 // @ts-ignore - No type definitions available

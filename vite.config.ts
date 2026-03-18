@@ -15,20 +15,14 @@ export default defineConfig({
   },
   define: {
     global: 'globalThis', // Fix global undefined error
-    // Provide require polyfill for browser
-    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
   },
   build: {
     rollupOptions: {
-      external: ['jquery'], // Externalize jQuery
       output: {
         manualChunks: undefined,
         assetFileNames: 'assets/[name].[hash][extname]',
         chunkFileNames: 'assets/[name].[hash].js',
         entryFileNames: 'assets/[name].[hash].js',
-        globals: {
-          jquery: '$', // Map jQuery to global $ variable
-        },
       },
     },
     chunkSizeWarningLimit: 1000,
@@ -40,8 +34,4 @@ export default defineConfig({
   optimizeDeps: {
     include: ['jquery'], // Ensure jQuery is pre-bundled and available
   },
-  // Add CommonJS support
-  ssr: {
-    noExternal: ['jquery']
-  }
 })

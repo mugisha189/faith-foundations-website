@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useEffect } from 'react';
 import HomePage from './pages/HomePage';
 import AboutUs from './pages/AboutUs';
 import Header from './components/common/Header';
@@ -16,75 +15,6 @@ import NotFound from './pages/NotFound';
 import SEO from './components/SEO';
 
 function App() {
-  useEffect(() => {
-    // Load external CSS files
-    const cssLinks = [
-      '/css/main.css',
-      '/css/responsive.css',
-      '/css/default-theme.css',
-      '/css/sticky-header.css',
-      '/css/box-layout.css',
-      '/css/dark-mode.css',
-      '/css/rtl.css'
-    ];
-
-    cssLinks.forEach(href => {
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = href;
-      document.head.appendChild(link);
-    });
-
-    // Load external JavaScript files
-    const scripts = [
-      '/js/jquery-3.7.1.min.js',
-      '/js/bootstrap.bundle.min.js',
-      '/js/jquery.nice-select.min.js',
-      '/js/jquery.magnific-popup.min.js',
-      '/js/swiper-bundle.min.js',
-      '/js/viewport.jquery.js',
-      '/js/odometer.min.js',
-      '/js/vanilla-tilt.min.js',
-      '/js/aos.js',
-      '/js/SplitText.min.js',
-      '/js/ScrollToPlugin.min.js',
-      '/js/ScrollTrigger.min.js',
-      '/js/gsap.min.js',
-      '/js/template-settings.js',
-      '/js/custom.js'
-    ];
-
-    scripts.forEach(src => {
-      const script = document.createElement('script');
-      script.src = src;
-      document.body.appendChild(script);
-    });
-
-    // Load AOS from CDN and initialize
-    const aosScript = document.createElement('script');
-    aosScript.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
-    aosScript.onload = () => {
-      const initScript = document.createElement('script');
-      initScript.innerHTML = `
-        AOS.init({
-          duration: 1000,
-          once: true,
-          offset: 100
-        });
-      `;
-      document.body.appendChild(initScript);
-    };
-    document.body.appendChild(aosScript);
-
-    return () => {
-      // Cleanup function to remove added elements if needed
-      const addedLinks = document.querySelectorAll('link[href^="/css/"]');
-      const addedScripts = document.querySelectorAll('script[src^="/js/"]');
-      addedLinks.forEach(link => link.remove());
-      addedScripts.forEach(script => script.remove());
-    };
-  }, []);
-
   return (
     <>
       <SEO />

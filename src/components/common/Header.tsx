@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
@@ -43,30 +42,30 @@ const Header: React.FC = () => {
                   <div className="main-header__menu-box">
                      <nav className="navbar p-0">
                         <div className="navbar-logo">
-                           <Link to="/" aria-label="home page">
+                           <a href="/" aria-label="home page">
                               <img src="/images/logo.png" alt="Faith Foundation Rwanda Logo" />
-                           </Link>
+                           </a>
                         </div>
                         <div className="navbar__menu-wrapper">
                            <div className="navbar__menu d-none d-xl-block">
                               <ul className="navbar__list">
                                  <li className="navbar__item nav-fade">
-                                    <Link to="/">Home</Link>
+                                    <a href="/">Home</a>
                                  </li>
                                  <li className="navbar__item nav-fade">
-                                    <Link to="/about-us">About Us</Link>
+                                    <a href="/about-us">About Us</a>
                                  </li>
                                  <li className="navbar__item nav-fade">
-                                    <Link to="/causes">Causes</Link>
+                                    <a href="/causes">Causes</a>
                                  </li>
                                  <li className="navbar__item nav-fade">
-                                    <Link to="/news">News</Link>
+                                    <a href="/news">News</a>
                                  </li>
                                  <li className="navbar__item nav-fade">
-                                    <Link to="/events">Events</Link>
+                                    <a href="/events">Events</a>
                                  </li>
                                  <li className="navbar__item nav-fade">
-                                    <Link to="/contact-us">Contact Us</Link>
+                                    <a href="/contact-us">Contact Us</a>
                                  </li>
                               </ul>
                            </div>
@@ -87,8 +86,8 @@ const Header: React.FC = () => {
                                     <i className="fa-solid fa-magnifying-glass"></i>
                                  </button>
                               </div>
-                              <Link to="/donate" className="btn--primary d-none d-md-flex">Donate Now <i
-                                    className="fa-solid fa-arrow-right"></i></Link>
+                              <a href="/donate" className="btn--primary d-none d-md-flex">Donate Now <i
+                                    className="fa-solid fa-arrow-right"></i></a>
                            </div>
                            <button className="open-offcanvas-nav d-flex d-xl-none" aria-label="toggle mobile menu"
                               title="open offcanvas menu">
@@ -107,9 +106,9 @@ const Header: React.FC = () => {
          <nav className="mobile-menu__wrapper">
             <div className="mobile-menu__header nav-fade">
                <div className="logo">
-                  <Link to="/" aria-label="home page" title="logo">
+                  <a href="/" aria-label="home page" title="logo">
                      <img src="/images/logo.png" alt="Faith Foundation Rwanda Logo" />
-                  </Link>
+                  </a>
                </div>
                <button aria-label="close mobile menu" className="close-mobile-menu">
                   <i className="fa-solid fa-xmark"></i>
@@ -118,27 +117,27 @@ const Header: React.FC = () => {
             <div className="mobile-menu__list">
                <ul className="navbar__list">
                   <li className="navbar__item nav-fade">
-                     <Link to="/">Home</Link>
+                     <a href="/">Home</a>
                   </li>
                   <li className="navbar__item nav-fade">
-                     <Link to="/about-us">About Us</Link>
+                     <a href="/about-us">About Us</a>
                   </li>
                   <li className="navbar__item nav-fade">
-                     <Link to="/causes">Causes</Link>
+                     <a href="/causes">Causes</a>
                   </li>
                   <li className="navbar__item nav-fade">
-                     <Link to="/news">News</Link>
+                     <a href="/news">News</a>
                   </li>
                   <li className="navbar__item nav-fade">
-                     <Link to="/events">Events</Link>
+                     <a href="/events">Events</a>
                   </li>
                   <li className="navbar__item nav-fade">
-                     <Link to="/contact-us">Contact Us</Link>
+                     <a href="/contact-us">Contact Us</a>
                   </li>
                </ul>
             </div>
             <div className="mobile-menu__cta nav-fade d-block d-md-none">
-               <Link to="/donate" className="btn--primary ">Donate Now <i className="fa-solid fa-arrow-right"></i></Link>
+               <a href="/donate" className="btn--primary ">Donate Now <i className="fa-solid fa-arrow-right"></i></a>
             </div>
             <div className="mobile-menu__social social nav-fade">
                <a href="https://www.facebook.com/faithfoundationrwanda" target="_blank" rel="noopener noreferrer" aria-label="share us on facebook" title="facebook">

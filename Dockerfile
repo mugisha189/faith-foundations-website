@@ -19,11 +19,8 @@ COPY . .
 # Build the application
 RUN pnpm run build
 
-# Install serve to run the built app
-RUN npm install -g serve
-
 # Expose port 4040
 EXPOSE 4040
 
-# Serve the built application
-CMD ["serve", "-s", "dist", "-l", "4040"]
+# Start the application with vite preview
+CMD ["pnpm", "preview", "--host", "0.0.0.0", "--port", "4040"]

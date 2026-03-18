@@ -4,6 +4,7 @@ import AboutUs from './pages/AboutUs';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import Preloader from './components/common/Preloader';
+import AOSInit from './components/common/AOSInit';
 import Donate from './pages/Donate';
 import ContactUs from './pages/ContactUs';
 import Campaign from './pages/Campaign';
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
       <SEO />
+      <AOSInit />
       <Preloader />
       <Router >
             <div className="page-wrapper">

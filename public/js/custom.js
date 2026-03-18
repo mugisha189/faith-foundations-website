@@ -1,14 +1,6 @@
 /* ==============
  ========= js documentation ==========================
 
- * template name: Charifund
- * version: 1.0
- * description: Nonprofit NGO Fundraising HTML5 Template
- * author: wowtheme7
- * author-url: https://themeforest.net/user/wowtheme7
-
-    ==================================================
-
      01. preloader
      -------------------------------------------------
      02. background image
@@ -1182,19 +1174,15 @@
 
     /**
      * ======================================
-     * 31. footer copyright year
+     * 31. footer copyright year - REMOVED (handled by React)
      * ======================================
      */
-    if ($("#copyrightYear").length > 0) {
-      $("#copyrightYear").text(new Date().getFullYear());
-    }
 
     /**
      * ======================================
-     * 32. aos initialization
+     * 32. aos initialization - REMOVED (handled by React)
      * ======================================
      */
-    AOS.init();
 
     /**
      * ======================================

@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
   return (
 <div>
       <footer className="footer-two">
@@ -113,7 +114,7 @@ const Footer: React.FC = () => {
                <div className="row align-items-center gutter-12">
                   <div className="col-12 col-lg-6">
                      <div className="footer-two__copyright-inner text-center text-lg-start">
-                        <p>Copyright &copy; <span id="copyrightYear"></span> <a href="/">Faith Foundation</a>.
+                        <p>Copyright &copy; {currentYear} <a href="/">Faith Foundation</a>.
                            All rights
                            reserved.
                         </p>

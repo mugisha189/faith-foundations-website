@@ -60,6 +60,20 @@ function App() {
          </svg>
       </button>
             </div>
+            <script src="/js/jquery-3.7.1.min.js"></script>
+   <script src="/js/bootstrap.bundle.min.js"></script>
+   <script src="/js/jquery.nice-select.min.js"></script>
+   <script src="/js/jquery.magnific-popup.min.js"></script>
+   <script src="/js/swiper-bundle.min.js"></script>
+   <script src="/js/viewport.jquery.js"></script>
+   <script src="/js/odometer.min.js"></script>
+   <script src="/js/vanilla-tilt.min.js"></script>
+   <script src="/js/SplitText.min.js"></script>
+   <script src="/js/ScrollToPlugin.min.js"></script>
+   <script src="/js/ScrollTrigger.min.js"></script>
+   <script src="/js/gsap.min.js"></script>
+   <script src="/js/template-settings.js"></script>
+   <script src="/js/custom.js"></script>
     </Router>
     </>
   );

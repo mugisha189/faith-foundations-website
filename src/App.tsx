@@ -58,23 +58,9 @@ function App() {
          <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
          </svg>
-      </button>
-            </div>
-            <script src="/js/jquery-3.7.1.min.js"></script>
-   <script src="/js/bootstrap.bundle.min.js"></script>
-   <script src="/js/jquery.nice-select.min.js"></script>
-   <script src="/js/jquery.magnific-popup.min.js"></script>
-   <script src="/js/swiper-bundle.min.js"></script>
-   <script src="/js/viewport.jquery.js"></script>
-   <script src="/js/odometer.min.js"></script>
-   <script src="/js/vanilla-tilt.min.js"></script>
-   <script src="/js/SplitText.min.js"></script>
-   <script src="/js/ScrollToPlugin.min.js"></script>
-   <script src="/js/ScrollTrigger.min.js"></script>
-   <script src="/js/gsap.min.js"></script>
-   <script src="/js/template-settings.js"></script>
-   <script src="/js/custom.js"></script>
-    </Router>
+       </button>
+             </div>
+     </Router>
     </>
   );
 }

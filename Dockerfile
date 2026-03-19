@@ -1,26 +1,22 @@
-# Use Node.js 20 LTS as base image (required for Vite 7.3.1)
 FROM node:20-alpine
 
-# Install pnpm
-RUN npm install -g pnpm
-
-# Set working directory
 WORKDIR /app
 
-# Copy package files
+# Match your GitHub Actions workflow which runs `-p 4040:4040`
+ENV PORT=4040
+ENV NODE_ENV=production
+
+# Install dependencies first for better Docker layer caching.
 COPY package.json pnpm-lock.yaml ./
 
-# Install dependencies
-RUN pnpm install --frozen-lockfile
+RUN corepack enable \
+  && corepack prepare pnpm@latest --activate \
+  && pnpm install --frozen-lockfile --prod
 
-# Copy source code
+# Copy the application code (static assets + views + server).
 COPY . .
 
-# Build the application
-RUN pnpm run build
-
-# Expose port 4040
 EXPOSE 4040
 
-# Start the application with vite preview
-CMD ["pnpm", "preview", "--host", "0.0.0.0", "--port", "4040"]
+CMD ["node", "server.js"]
+

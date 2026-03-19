@@ -13,13 +13,13 @@ const Events: React.FC = () => {
             </div>
          </div>
          <div className="banner-bg">
-            <img src="assets/images/banner/banner-bg.png" alt="Image" />
+            <img src="/images/banner/banner-bg.png" alt="Image" />
          </div>
          <div className="shape">
-            <img src="assets/images/shape.png" alt="Image" />
+            <img src="/images/shape.png" alt="Image" />
          </div>
          <div className="sprade" data-aos="zoom-in" data-aos-duration="1000">
-            <img src="assets/images/sprade-base.png" alt="Image" className="base-img" />
+            <img src="/images/sprade-base.png" alt="Image" className="base-img" />
          </div>
       </section>
       <section className="event event-alt">
@@ -38,7 +38,7 @@ const Events: React.FC = () => {
                   <div className="event__single-wrapper" data-aos="fade-up" data-aos-duration="1000">
                      <div className="event__single van-tilt">
                         <div className="event__single-thumb">
-                           <img src="assets/images/event/one.png" alt="Image" />
+                           <img src="/images/event/one.png" alt="Image" />
                         </div>
                         <div className="event__content">
                            <span>October 19, 2025</span>
@@ -54,7 +54,7 @@ const Events: React.FC = () => {
                   <div className="event__single-wrapper" data-aos="fade-left" data-aos-duration="1000">
                      <div className="event__single event-single-alt van-tilt">
                         <div className="event__single-thumb">
-                           <img src="assets/images/event/two.png" alt="Image" />
+                           <img src="/images/event/two.png" alt="Image" />
                         </div>
                         <div className="event__content">
                            <span>October 19, 2025</span>
@@ -68,7 +68,7 @@ const Events: React.FC = () => {
                   <div className="event__single-wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                      <div className="event__single  event-single-alt van-tilt">
                         <div className="event__single-thumb">
-                           <img src="assets/images/event/three.png" alt="Image" />
+                           <img src="/images/event/three.png" alt="Image" />
                         </div>
                         <div className="event__content">
                            <span>October 19, 2025</span>
@@ -110,7 +110,7 @@ const Events: React.FC = () => {
             </div>
          </div>
          <div className="spade">
-            <img src="assets/images/blog/spade-base.png" alt="Image" className="base-img" />
+            <img src="/images/blog/spade-base.png" alt="Image" className="base-img" />
          </div>
       </section>
 </div>

@@ -16,7 +16,10 @@ const HomePage: React.FC = () => {
             <div className="swiper-wrapper">
                <div className="swiper-slide">
                   <div className="banner-two__slider-single">
-                     <div className="banner-two__slider-bg" data-background="/images/banner/banner-two-bg.png">
+                     <div
+                       className="banner-two__slider-bg"
+                       style={{ backgroundImage: 'url("/images/banner/banner-two-bg.png")' }}
+                     >
                      </div>
                      <div className="container">
                         <div className="row">
@@ -41,7 +44,10 @@ const HomePage: React.FC = () => {
                </div>
                <div className="swiper-slide">
                   <div className="banner-two__slider-single">
-                     <div className="banner-two__slider-bg" data-background="/images/banner/banner-one-bg.png">
+                     <div
+                       className="banner-two__slider-bg"
+                       style={{ backgroundImage: 'url("/images/banner/banner-one-bg.png")' }}
+                     >
                      </div>
                      <div className="container">
                         <div className="row">
@@ -66,7 +72,10 @@ const HomePage: React.FC = () => {
                </div>
                <div className="swiper-slide">
                   <div className="banner-two__slider-single">
-                     <div className="banner-two__slider-bg" data-background="/images/banner/banner-two-bg.png">
+                     <div
+                       className="banner-two__slider-bg"
+                       style={{ backgroundImage: 'url("/images/banner/banner-two-bg.png")' }}
+                     >
                      </div>
                      <div className="container">
                         <div className="row">
@@ -91,7 +100,10 @@ const HomePage: React.FC = () => {
                </div>
                <div className="swiper-slide">
                   <div className="banner-two__slider-single">
-                     <div className="banner-two__slider-bg" data-background="/images/banner/banner-one-bg.png">
+                     <div
+                       className="banner-two__slider-bg"
+                       style={{ backgroundImage: 'url("/images/banner/banner-one-bg.png")' }}
+                     >
                      </div>
                      <div className="container">
                         <div className="row">

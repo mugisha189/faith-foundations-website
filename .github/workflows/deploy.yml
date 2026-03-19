@@ -29,6 +29,7 @@ jobs:
           echo "Building Docker image..."
           docker build -t faith-foundations .
 
+      # Run the container directly via `docker run` (no Docker Compose).
       - name: Run Docker container
         run: |
           echo "Starting Docker container..."
